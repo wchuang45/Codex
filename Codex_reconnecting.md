@@ -87,3 +87,14 @@ NO_PROXY="localhost,127.0.0.1,::1"
 4. TUN 模式下系统底层所有 TCP/UDP 流量将由虚拟网卡无缝劫持接管，无需在 Codex 内部做任何繁琐的环境变量设置。
 
 ---
+
+## 解决方案四 其他情况：你的配置文件不支持codex
+当你如上操作后还是reconnecting，检查你的代理配置文件(yaml)开头的端口设置是不是如下
+```yaml
+port: 7890
+socks-port: 7891
+```
+可以尝试把这两行改成
+```yaml
+mixed-port: 7890
+```
