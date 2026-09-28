@@ -2,7 +2,7 @@
 
 在使用 Codex CLI 过程中，若经常遇到长连接中断、报错 `Stream disconnected before completion: Transport error: network error: error decoding response body` 或频繁触发 `Reconnecting...`，通常是由于本地代理（如 Clash）对长连接 WebSocket 支持不稳定、空闲超时切断或终端未正确读取代理导致的。
 
-本文档汇总了三种行之有效的解决方案，建议按顺序优先尝试 **方法一**。
+本文档汇总了三种行之有效的解决方案，亲测后建议优先尝试 **方法二**。
 
 ---
 
